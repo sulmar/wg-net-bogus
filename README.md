@@ -4,7 +4,7 @@
 
 ## Biblioteki
 
-### Bogus
+### [Bogus](https://github.com/bchavez/Bogus)
 ~~~
 dotnet add package Bogus
 ~~~

@@ -8,7 +8,7 @@ namespace wg_net_bogus
     {
         static void Main(string[] args)
         {
-            DisplayWelcome();
+            ConsoleHelper.DisplayWelcome();
 
             // GenerateCustomersTest();
 
@@ -27,6 +27,8 @@ namespace wg_net_bogus
 
             };
 
+
+            // dotnet add package ConsoleTables
             ConsoleTable
                .From(customers)
                .Configure(o => o.NumberAlignment = Alignment.Left)
@@ -37,25 +39,12 @@ namespace wg_net_bogus
         private static void GenerareMeasuresTest()
         {
         }
-
-
-
-
-        private static void DisplayWelcome()
-        {
-            var table = new ConsoleTable("col1", "col2", "col3");
-
-            table
-                 .AddRow("WGdotNET", "139. Spotkanie", "Udawanie danych z Bogusiem!")
-                 .AddRow("Marcin Sulecki", "marcin.sulecki@sulmar.pl", "github.com/sulmar");
-
-            table.Write(Format.Alternative);
-            Console.WriteLine();
-        }
     }
 
 
-    #region Models
+
+    #region Customer Model
+
     public class Customer
     {
         public int Id { get; set; }
@@ -85,6 +74,10 @@ namespace wg_net_bogus
         Serious
     }
 
+    #endregion
+
+    #region Measure Model
+
     public class Sensor
     {
         public string MacAddress { get; set; }
@@ -99,8 +92,6 @@ namespace wg_net_bogus
         public float Value { get; set; }
     }
 
-    #endregion
-
     public static class MeasureExtensions
     {
         public static void Dump(this Measure measure)
@@ -109,5 +100,6 @@ namespace wg_net_bogus
         }
     }
 
+#endregion
 
 }

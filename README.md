@@ -9,7 +9,8 @@
 dotnet add package Bogus
 ~~~
 
-### Bogus.Extensions.Poland
+### [Bogus.Extensions.Poland](https://github.com/sulmar/Bogus.Extensions.Poland)
 ~~~
 dotnet add package Sulmar.Bogus.Extensions.Poland
 ~~~
+

@@ -1,5 +1,15 @@
+
 # Udawanie danych z Bogusiem
-139. Spotkanie Warszawska Grupa .NET
+
+~~~
++----------------+--------------------------+-----------------------------+
+| col1           | col2                     | col3                        |
++----------------+--------------------------+-----------------------------+
+| WGdotNET       | 139. Spotkanie           | Udawanie danych z Bogusiem! |
++----------------+--------------------------+-----------------------------+
+| Marcin Sulecki | marcin.sulecki@sulmar.pl | github.com/sulmar           |
++----------------+--------------------------+-----------------------------+
+~~~
 
 
 ## Biblioteki
